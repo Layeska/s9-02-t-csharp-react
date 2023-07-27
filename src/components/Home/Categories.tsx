@@ -2,10 +2,6 @@ import { useCategoriesQuery } from "../../services/categoryApi";
 import useCategory from "../../hooks/useCategory";
 import Card from "./Card";
 
-interface categorias{
-  id:number,
-  nombre:string
-}
 export default function Categories() {
   const { data: lists } = useCategoriesQuery(null);
   const { selectId, handleSelectId } = useCategory();
