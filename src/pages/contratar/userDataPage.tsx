@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useAppSelector } from "../../hooks/store";
 import { usePerfilInfoQuery } from "../../services/perfilApi"
-import { useState } from "react";
 
 export default function UserDataPage(): JSX.Element {
   const proveedorData = useAppSelector((state) => state.proveedor);
