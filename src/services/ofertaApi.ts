@@ -4,7 +4,7 @@ import { RootState } from "../store/store";
 export const ofertasData = createApi({
   reducerPath: "ofertasData",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://jobbix.somee.com/",
+    baseUrl: "https://jobbix.somee.com/",
     prepareHeaders: (headers, { getState }) => {
       const token = (getState() as RootState).auth.token;
       if (token) {
