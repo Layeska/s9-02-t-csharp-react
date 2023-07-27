@@ -4,7 +4,7 @@ export default function useCategory(){
     const [selectId, setSelectId] = useState(null)
     const[selectIdOffer, setSelectIdOffer] = useState(null)
 
-    const handleSelectId = (id: any) => {
+    const handleSelectId = (id: null) => {
         setSelectId(id)
     }
     const handleSelectOfferId = () => {
