@@ -8,6 +8,8 @@ function ImageUpload() {
         const file: File | null = event.target.files?.[0] || null
         setSelectedImage(file)
 
+        console.log(selectedImage)
+
         if (file) {
             const reader = new FileReader()
             reader.onloadend = () => setImagePreview(reader.result as string)
