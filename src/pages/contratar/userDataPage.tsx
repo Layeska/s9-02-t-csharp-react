@@ -8,7 +8,6 @@ export default function UserDataPage(): JSX.Element {
   const navigate = useNavigate();
 
   const { data } = usePerfilInfoQuery(null)
-  const [isTrue, setIsTrue] = useState<boolean>(true)
 
   const handleClic = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
@@ -32,7 +31,7 @@ export default function UserDataPage(): JSX.Element {
               className="border-[#79747E] border-[1.8px] p-2"
               name="nombres"
               placeholder={data?.nombres}
-              disabled={isTrue}
+              disabled={true}
             />
           </div>
           <div className="flex flex-col relative w-[48%]">
@@ -42,7 +41,7 @@ export default function UserDataPage(): JSX.Element {
             >
               Apellido
             </label>
-            <input type="text" className="border-[#79747E] border-2 p-2" placeholder={data?.apellidos} disabled={isTrue} />
+            <input type="text" className="border-[#79747E] border-2 p-2" placeholder={data?.apellidos} disabled={true} />
           </div>
         </div>
         <div className="flex flex-col w-11/12 mt-5 mb-3 relative">
@@ -56,7 +55,7 @@ export default function UserDataPage(): JSX.Element {
             className="border-[#79747E] border-[1.8px] mb-5 h-12 p-2"
             type="text"
             placeholder={data?.direccion}
-            disabled={isTrue}
+            disabled={true}
           />
         </div>
         <div className="flex flex-col w-11/12 relative mb-5">
@@ -66,7 +65,7 @@ export default function UserDataPage(): JSX.Element {
           >
             Celular
           </label>
-          <input className="border-[#79747E] border-[1.8px] h-12 p-2" type="text" placeholder={data?.telefono} disabled={isTrue} />
+          <input className="border-[#79747E] border-[1.8px] h-12 p-2" type="text" placeholder={data?.telefono} disabled={true} />
         </div>
         <div className="flex flex-col items-center w-11/12 ">
           <h2 className="mb-6 font-bold text-lg">Fecha y Horario</h2>
