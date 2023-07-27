@@ -13,7 +13,7 @@ export default function Categories() {
   return (
     <>
       <div className="flex flex-row justify-center gap-x-2">
-        {lists?.map((list:categorias) => (
+        {lists?.map((list:any) => (
           <div
             key={list.id}
             className="w-[180px] h-[97px] p-2.5 bg-neutral-700 rounded-lg 
